@@ -28,7 +28,6 @@ class Item(BaseModel):
     )
 
     class Config:
-        # Примеры в автодокументации OpenAPI
         schema_extra = {
             "example": {
                 "name": "Test Item",

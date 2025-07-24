@@ -8,7 +8,7 @@ load_dotenv()
 
 # Чтение настроек
 TABLE_NAME = os.getenv("DYNAMODB_TABLE", "items")
-REGION = os.getenv("AWS_REGION", "us-east-1")
+REGION = os.getenv("AWS_DEFAULT_REGION", "us-east-1")
 ENDPOINT_URL = os.getenv("DYNAMODB_ENDPOINT_URL")  # используется для LocalStack
 
 # Инициализация ресурса DynamoDB
